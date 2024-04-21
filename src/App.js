@@ -5,6 +5,7 @@ import Create from "./components/Create";
 import Welcome from "./components/Welcome";
 import Read from "./components/Read";
 import Update from "./components/Update";
+import Movie from './components/Movie'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Welcome />}></Route>
+          <Route path="/movie" element={<Movie></Movie>}/>
           <Route path="/create" element={<Create />}></Route>
           <Route path="/read" element={<Read />}></Route>
           <Route path="/edit/:id" element={<Update />}></Route>
